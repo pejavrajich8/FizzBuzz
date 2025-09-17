@@ -1,7 +1,11 @@
+//this is the button that will be clicked to run the fizzbuzz algorithm
+
 document.addEventListener('DOMContentLoaded', function () {
     const button = document.getElementById('fizzBtn');
     const output = document.getElementById('output');
     if (!button || !output) return;
+
+    // this is the function that will be called when the button is clicked
   
     button.addEventListener('click', function () {
       const lines = [];
@@ -18,5 +22,5 @@ document.addEventListener('DOMContentLoaded', function () {
       }
       output.innerHTML = lines.join('<br>');
     });
-  });
+  })
   
